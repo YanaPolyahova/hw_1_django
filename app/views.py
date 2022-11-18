@@ -26,7 +26,7 @@ def home_view(request):
 def time_view(request):
     # обратите внимание – здесь HTML шаблона нет,
     # возвращается просто текст
-    current_time = datetime.datetime.now().time()
+    current_time = datetime.now().time()
     msg = f'Текущее время: {current_time}'
     return HttpResponse(msg)
 
